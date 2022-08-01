@@ -1,0 +1,44 @@
+			Welcome To Angular Module 8
+				  Sumit Raokhande
+
+ - Session is start from monday to friday
+ - Duration of session is avg 1.15min=> it may be increase to 1.30 or it may decrease to 1hr it depend on topic
+ - sat is doubt solving session whose time is same 11am its 1 hr session. 
+ - don't absent any session => but any geniue problem u will left ur session but on next session u hv to go through the video of previous session.
+ - Daily Practice is required
+ - u have joined timely 
+ - Details topic we r learn as industry standard
+ - Angular 8 => 7/8/9
+ - U know at least basics of HTML & css
+ - u khow at least OOPS concepts
+ - for to angular we required typescript => we learn first typescript
+ - all codes u will get through the git hub repository
+ - all videos will be given 
+ - whtas up always check 
+ - we also do project.
+ - Time Duration is 55hr is required to complete angular
+ - 10-15 days required complete ur project
+ 
+ 10 API 
+ 2 entity class
+ 1 Employee 2 Country 
+	both entity class should be one to one mapping
+ 
+ API => 
+ 1 getAllemployee
+ 2 getParticularEmpbyid
+ 3 update employee
+ 4 deleteEmpl
+ 5 getParticularEmpbystatus
+ 6 addEmployee
+ 7 addcountry
+ 8 getAllCountry
+ 9 getParticularCountry
+ 10 update country
+ 11 delete country
+ 
+ 
+ 
+ 
+ 
+ 
