@@ -1,0 +1,38 @@
+Last Lecture
+Introduction
+
+Today's Lecture
+1 Difference Between Angular js & angular => differenc between js & ts 
+2 What is Angular
+3 Why Angular/features of Angular/advantages of angular
+4 What is Typescript
+5 Advantages of Typescript
+6 Disadvantages of Typescript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
