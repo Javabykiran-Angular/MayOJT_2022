@@ -1,0 +1,76 @@
+Last Lecture
+Difference Between Angular js & angular => differenc between js & ts 
+	- mvc arch / mvw
+	- object based lang / object orientated lang
+	- opps concept not support / support
+	- memory is not efficient / memory efficient
+	- mobile community is not support/ support
+	- degrade in performance /increase in performance
+	
+2 What is Angular
+	it is framework
+	react js ,vue js,embber js ,jsp 
+3 Why Angular/features of Angular/advantages of angular
+	- it created module,template declaration,service,DI ,ened to end tooling
+	- it is framework
+	- it is universal framework 
+	- it creates progressive apps 
+	- one framework to all of you
+	- optimize & highr speed 
+	- code splitting
+	- angular cli
+	- spa 
+4 What is Typescript
+	- it is superset of js 
+	- typescript= ecma script standard + ecma scriptversion (js)+ additional features
+5 Advantages of Typescript
+	- strong static typing
+	- compile time error find
+	- it support oops concept
+	
+6 Disadvantages of Typescript
+	- browser doesn't understand 
+		- tsc => compiler 
+			it translate ur .ts file into .js file 
+	- it has compilation speed is low 
+
+npm install -g typescript 
+	
+
+Today's Lecture
+1 Overview of VScode
+	- it is code editior 
+	
+2 Simple pgm
+3 variable
+4 data types
+5 initials values
+6 type assertions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
