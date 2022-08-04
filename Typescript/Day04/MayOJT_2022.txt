@@ -1,0 +1,77 @@
+Last Lecture
+1 Overview of VScode
+	- it is code editior 	
+2 Simple pgm
+	demo1.ts
+		console.log("Hello world");
+		console.log('Welcome to angular ')
+		tsc demo1.ts & node demo1.js
+3 variable
+	var a,b;
+	
+4 data types
+	- number
+	- string
+	- boolean
+	- any 
+	- void
+	- misec null & undefined
+5 initials values
+	var a:number; 
+		- undefined
+	var a;
+	 -> defualt data type any
+	var a:number=10;
+	console.log("Value of a "+a)
+	console.log(`Value of a ${a}`)
+	var a=54;
+	var str:any;
+	str=2.5;
+	str='sumit';
+	str=true;
+6 type assertions
+	- angle bracket syntax
+	- as syntax
+	var a:any;
+	var temp=(<string> a )
+	
+	var temp=(a as string)
+	
+
+Today's Lecture
+1 literal
+2 enum
+3 type
+4 operators
+5 control statement
+6 loop statement 
+7 difference between var vs let vs const 
+8 functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
