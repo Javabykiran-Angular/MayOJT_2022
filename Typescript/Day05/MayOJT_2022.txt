@@ -1,0 +1,76 @@
+Last Lecture
+1 literal
+	
+	var a:number|string;
+	var a:50|string;
+2 enum
+	enum size{s=2,l=4}
+3 type
+	type var a=number|string;
+	var b:a;
+	
+4 operators
+	- airthmathic 
+	- logical
+	- bitwise
+	- relelational
+	- assignment => ==,===
+	- unary
+	- ternary => 
+5 control statement
+	if,if-else,switch,break,continue
+6 loop statement 
+	for,while,do-while
+	for (let i=0;i<5;i++){
+	.....
+	}
+7 difference between var vs let vs const 
+	var => global scope
+	let => within nearest block
+	const => global as well as local 
+8 functions
+	- functions without parameter & without return type 
+	- functions with parameter & without return type 
+	- functions without parameter & with return type 
+	- functions with parameter & with return type 
+	function add1(a:number,b:number):number{
+		return (a+b)
+	}
+	
+	add1();
+
+Today's Lecture
+1 Anonymous Function
+2 FatArrow Function
+3 optional parameter functions
+4 default parameter functions
+5 basics of array
+6 Join Method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
