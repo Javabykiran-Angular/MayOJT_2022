@@ -1,0 +1,70 @@
+Last Lecture
+1 Anonymous Function
+	let temp=function (a:number,b:number):number{
+		return (a+b)
+	}
+	temp();
+2 FatArrow Function
+	let temp=(a:number,b:number):number=>{
+			return (a+b)
+	}
+	
+	temp()
+3 optional parameter functions
+	function add(a?:number,b?:number){
+	......
+	}
+	add(4)
+4 default parameter functions
+		function add(a:number,b:number=8){
+		...
+		}
+		
+		add(5);
+5 basics of array
+	let a:number[]=[2,3,4];
+	let a=[4,5];
+	let a=[2.5,'sumit',true];
+	let a:any[]=[];
+	
+	
+	
+6 Join Method
+	a.join(" # ");
+
+Today's Lecture
+1 For each loop
+2 rest parameter functions
+3 Push & pop method
+4 Splice
+5 slice
+6 map 
+7 de-referncing of array 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
