@@ -1,0 +1,62 @@
+Last Lecture
+1 For each loop
+	a.forEach((value,i)=>{
+		....
+	})
+2 rest parameter functions
+	function display(...item:number[]){
+		....
+	}
+	display(2,3,4)
+3 Push & pop method
+	- LIFO principal
+	a.push(4,5,6)
+	let res=a.pop()
+4 Splice
+	a.splice(1,0,45,55);
+	a.splice(2,1);
+	a.splice(2,1,50);
+	
+5 slice
+	let temp=a.slice(1,6)
+6 map 
+	a.map((value)=>{
+		return (value*value)
+	})
+7 de-referncing of array
+	let [t1,t2]=a;
+	let [t1,...arr]=a;
+
+Today's Lecture
+1 Shallow Copy & deep Copy (JS interview Question)
+2 Swapping variables without using 3rd variables (Js interview Question)
+3 Functions that return multiple values (JS interview Question)
+4 Simple Json Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
