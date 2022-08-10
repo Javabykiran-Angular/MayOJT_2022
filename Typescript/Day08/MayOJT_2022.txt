@@ -1,0 +1,76 @@
+Last Lecture
+1 Shallow Copy & deep Copy (JS interview Question)
+	- all variables are deep copy
+	let a=20;
+	let b=a;
+	b=10;
+	- array is by default it is shallow copy 
+	let arr=[];
+	let arr1=arr;
+	let c=[...arr];
+	
+2 Swapping variables without using 3rd variables (Js interview Question)
+	- using 3rd variables
+	- addition & subctraction
+	- xor using 
+	- array destructor
+	let a=25;
+	let b=50;
+	[b,a]=[a,b]
+	
+3 Functions that return multiple values (JS interview Question)
+	function operation(a:number,b:number){
+		return [a+b,a-b,a*b];
+	}
+	
+	let [add,sub,mul]=operation(5,3);
+
+4 Simple Json Object
+	let obj={
+		fname:'sumit',
+		"lname":'Raokhande',
+		id:9
+	}
+	1 dot operator
+		obj.fname,obj.lname
+	2 square operator
+		obj["fname"]
+	
+	
+Today's Lecture
+1 Array of Object
+2 Class,object,Property
+3 Constructor
+4 Access Specifier
+5 Method
+6 access in same Package
+7 access in Different Package
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
