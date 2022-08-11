@@ -1,0 +1,116 @@
+Last Lecture
+1 Array of Object
+	let obj=[
+		{
+			id:9,
+			...,
+			country:{
+				cid:1,
+				cname:"india"
+			},
+			month:["Jan",'feb'],
+			result:[
+				{
+					subj:"M1",
+					marks:40
+				},
+				{
+					subj:"M1",
+					marks:40
+				}
+			]
+		},
+		{
+			id:9,
+			...
+		}
+	];
+	
+	for(let i=0;i<obj.length;i++){
+		console.log(`
+			id :: ${obj[i].id}
+			...
+			name :: ${obj[i].country.cname}
+			month:: ${obj[i].month}
+			--------------
+		`)
+		
+		for(let j=0;j<obj[i].result.length;j++)
+		{
+			....
+			obj[i].result[j].marks
+		}
+		
+	}
+	
+2 Class,object,Property
+	export class Myclass{
+		private id:number;
+		protected fname:string;
+		
+		constructor(id:number,...){
+			this.id=id;
+			....
+		}
+		
+		display(){
+			console.log(`
+				id :: ${this.id}
+			`)
+		}
+		
+	}
+	
+	let obj=new Myclass(9,'sumit');
+	obj.display();
+	
+	demo3.ts
+	
+	import {Myclass} from './demo1';
+		
+		let obj=new Myclass(3,'kiran')
+		
+		myfloder > demo4.ts
+		import {Myclass} from '../day08/demo1';
+	
+	
+3 Constructor
+4 Access Specifier
+5 Method
+6 access in same Package
+7 access in Different Package
+
+Today's Lecture
+1 Inheritance
+2 Method Override
+3 interface
+4 has a relationship/Association
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
