@@ -1,0 +1,123 @@
+Last Lecture
+1 Inheritance
+	export class Shape{
+		myarea(){
+		....
+		}
+	}
+	
+	circle.ts
+	
+	import{}
+	export class Circle extends Shape {
+		radius:number;
+		area:number;
+		
+		constructor(r:number){
+			super();
+			this.radius=r;
+			this.area=0;
+		}
+		
+		myarea(){
+		this.area=3.14**this.radius*this.radius;
+		}
+		
+		display(){
+		.....
+		}
+		
+	}
+	
+	mainineritance.ts
+	import {Circle} from './circle';
+	import {}....
+	
+	let circleobj=new Circle(2);
+	circleobj.myarea();
+	circleobj.display();
+	
+	
+2 Method Override
+3 interface
+	interface Employee{
+		fname:string;
+		lname:string;
+		fullname?:string;
+		display();
+	}
+	
+	export class EmployeeDetails implments Employee{
+			lname:string;
+			fname:string;
+			sal:number;
+			dept:Department;
+			
+			constructor(l:string,f:string,sal:number,role:string){
+			.....
+				this.dept=new Department(role);
+			}
+			
+			display(){
+			.....
+			
+				this.dept.getRole();
+			}
+	}
+	
+	interfaceMain.ts
+	import {}
+	let empobj=new EmployeeDetails("Raokhande",'Sumit',100000);
+	empobj.display();
+	
+4 has a relationship/Association
+
+	export class Department{
+		private role:string;
+		
+		
+		constructor(role:string){
+			this.role=role;
+		}
+		
+		//setter & getter
+		
+		getRole():string{
+			return this.role;
+		}
+		setRole(role:string){
+			this.role=role;
+		}
+	}
+
+Today's Lecture
+1 Angular Environment setup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
