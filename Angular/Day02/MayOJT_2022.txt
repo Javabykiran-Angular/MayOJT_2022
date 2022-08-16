@@ -1,0 +1,93 @@
+Last Lecture
+1 Angular Environment setup
+
+Today's Lecture
+1 Overview Angular architechure
+	- It is freamwork
+	- It is component orientated Arc
+	- Component contains
+		1 View File => .html 
+			only 1 view file 
+		2 Stylesheet file > .css
+			- multiple css file may be there`
+		3 component file  => .ts
+			only 1 ts file 
+		4 testing => .spec.ts file 
+		- metadata
+			extra information about ur component
+			@Component()
+		- Presenattion Logic 
+	- Data Binding Tech.
+		1 Property Binding
+		2 String interpolation
+		3 style binding
+		4 Class binding
+		- data flow from ts file to view file 
+	- Event Binding
+		Data/request flow from view file to component file 
+			- click,change,keyboard event,mouse event 
+	- directive
+		- To change the behviour of ur dom structure => view file 
+		- attribute
+		- structural directive
+		- component directive
+		- event directive
+	- App Module
+		- component declaration
+			- It creates a factory class of component
+		- import module
+			what is module?
+				- It is collection of component,class,interface,service,enum
+			- every angular application has 1 root module 
+			- u can create ur custom module 
+			- u can use inbuild Angular module
+			
+		- service
+			- It is simple class 
+			- for service we have different ways to implement
+				DI,Using RX Jx Lib.
+			- It is use code resulability
+			- code maintain
+			- we can write only businsess logic 
+			- We can use connection between backend to the front end 
+		- Routing
+			- navigation from one component to another component
+			- we can send data from one component to another
+	- Injector
+		- custom service
+		- inbuild service
+		- 3rd service
+		- u can also inject Object 
+		
+2 File Structure
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
