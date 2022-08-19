@@ -1,0 +1,73 @@
+Last Lecture
+1 String Interpolation VS Property Binding
+	
+		div hidden=" {{ishidden}} "> Dispaly the text
+		
+		div [hidden]="ishidden">....
+	
+2 Style Binding
+	h2 [style.color]="mycolor" > Apply Style binding
+	h2 [style.color]="rating<4?'red':'green'">.....
+	div [ngStyle]="jsonObj">....
+	
+	.ts file
+	jsonObj={
+		color:'green',
+		fontStyle:'italic',
+		'font-weight':'32px'
+	}
+3 Class Binding
+		h2 [class]="myclass">...
+		
+		h2 [class.danger]="rating<4"
+			[class.warning]="rating>4"
+		>....
+		
+		div [ngClass]="jsonObj"
+		
+		.ts file
+		myclass:string='success';
+		
+		jsonObj={
+			'success':!this.isError,
+			'danger':this.isError,
+			'special':this.isSpecial
+		}
+
+Today's Lecture
+1 Event Binding
+2 Click Event
+3 $event
+4 Template Reference Variable
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

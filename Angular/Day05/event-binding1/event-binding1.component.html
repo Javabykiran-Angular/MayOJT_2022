@@ -1,0 +1,27 @@
+<p>event-binding1 works!</p>
+<!-- syntax => (eventName)="EventHandler()/Custom Method Name()" -->
+
+<!-- <button (click)="onClick()">Click</button>
+<br><br>
+<img src="../../assets/bg.jfif" (click)="onImage()" title="Click on Image"
+ alt="">
+ <br><br> -->
+ <!-- $event=> it is Special variable given by angular 
+  it gives current dom element information
+  u can only access a data but u can not manipulate or change that data
+-->
+
+<!-- <button (click)="onDollerEvent($event)" value="Doller Event Occur!!!">Apply $event</button> -->
+
+<!-- Template Reference Variable
+    it gives the information of Html element i.e. it holds a handle/object/refernce of that html element
+    u can access a data & u can change the behaviour of data/html element
+-->
+
+  <input #inputname type="text" placeholder="Enter the name ">
+  <br><br>
+  <button (click)="onSend(inputname)" >Send</button> <br><br>
+
+  <input #inputname1 type="text" placeholder="Enter the name ">
+  <br><br>
+  <button (click)="onSend1(inputname1.value)" >Send</button>
