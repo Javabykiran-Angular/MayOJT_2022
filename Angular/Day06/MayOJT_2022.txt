@@ -1,0 +1,90 @@
+Last Lecture
+1 Event Binding
+	-data is flow from view file to component file
+2 Click Event
+	<button (click)="onClick()">Click
+	.ts file
+		count:number=0;
+		onClick(){
+			if(this.count==0){
+			console.log("Click event Occur")
+			this.count++;
+			}
+			
+		}
+		
+	<img src="../../assets/bg.jfif" (click)="onImageClick()">
+3 $event
+	- it gives current dom element info.
+	
+	<button value="Doller event occur" (click)="onClick($event)">click
+	
+	.ts file
+	onClick(myevent){
+		....
+		console.log(myevent.target.value);
+	}
+4 Template Reference Variable
+	- It gives html element handle/object/reference
+	
+	<input type="text" #inputname
+	placeholder="Enter the name">
+	<button (click)="onClick(inputname)">
+	
+	<input type="text" #inputname1
+	placeholder="Enter the name">
+	<button (click)="onClick(inputname1.value)">
+	
+	.ts file
+	onClick(mydata){
+		...
+		mydata.style.background='green';
+		mydata.style.color='white';
+	}
+	onClick1(mydata1){
+		...
+		...
+	}
+	
+
+Today's Lecture
+1 Real time Example with full Flow
+2 change event
+3 keyboard event
+4 Event Binding without method
+5 Two way Binding=> 
+	ngModel => It is attribute directive
+			   [(ngModel)]="PropertyName"
+				To implement ngModel import FormsModule
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
