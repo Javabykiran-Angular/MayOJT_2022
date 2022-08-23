@@ -1,0 +1,21 @@
+<p>if-directive works!</p>
+
+  <!-- syntax=> *ngIf="condition" => if that condition is true it excute a line of code -->
+
+  <!-- <div *ngIf="rating<4">
+      <h2>Condition is true</h2>
+  </div> -->
+
+  <div *ngIf="rating<4;else myelse">
+    <h2>Condition is true</h2>
+</div>
+
+<!-- <div #myelse>
+  <h2>Condition is False</h2>
+</div> -->
+
+<!-- ng-template => it is component directive . Initially it is hide  -->
+
+<ng-template #myelse>
+  <h2>Condition is False</h2>
+</ng-template>
