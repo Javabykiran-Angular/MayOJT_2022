@@ -1,0 +1,98 @@
+Last Lecture
+1 Structural Directive
+	- with help of Structural directive we can modify/manipulate/update ur dom behaviour-structure
+	- * => it indicates its a Structural directive
+	1 *ngIf => on basic of condition u can use it
+	2 *ngFor => dynamically do any iteration or to display value using ngfor
+	3 *ngSwitchCase => a particular case/ condition u go for ngSwitchCase
+2 *ngIf
+	div *ngIf="rating<4;else myelse">
+		condition is true
+		
+	div #myelse>
+	.....
+	
+	<ng-template #myelse>
+		
+3 *ngFor
+		<ul>
+			<li *ngFor="let item of course;index as i"> 
+			{{i+1}} {{item}}
+		
+	<table>
+		thead> 
+			th> Sr no 
+			
+			....
+		</thead>
+		<tbody>
+			tr *ngFor="let item of arrproduct;index as i"
+				(mouseover)="onMouseOver(item)"
+				[ngClass]="{
+					'highlight':selected===item.name
+				}"
+				(mouseout)="onMouseOut()"
+			> 	
+				td> {{item.name}}
+				....
+				
+				.ts file
+				arrproduct=[
+				{
+					name:"motorola",
+					price:20000,
+					quantity:1
+				},
+				{
+					name:"motorola",
+					price:20000,
+					quantity:1
+				}
+				]
+				
+				onMouseOver(item){
+					this.selected=item.name;
+				}
+				
+				onMouseOut(){
+					this.selected='';
+				}
+4 Mouse event
+	1 mouseover
+	2 mouseout
+	
+Today's Lecture
+1 *ngSwitchCase
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
