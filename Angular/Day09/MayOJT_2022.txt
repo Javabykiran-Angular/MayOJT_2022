@@ -1,0 +1,66 @@
+Last Lecture
+1 *ngSwitchCase
+	<input #inputcolor
+	placeholder="Enter the color name">
+	<button (click)="onSend(inputcolor.value)">Send
+	
+	<div [ngSwitch]="choice">
+		<div [style.background]="choice"
+		*ngSwitchCase="'red'">Your color name is {{choice}}
+		....
+		<div *ngSwitchCaseDefault 
+			[style.background]="choice==''?'black':'orange'"
+			[style.color]="choice==''?'white':'black'"
+			> ....
+	
+	
+	.ts file 
+	onSend(mycolor:string){
+		this.choice=mycolor.toLowerCase().trim();
+	}
+	
+
+Today's Lecture
+1 Component Interaction
+	- we can send a data from one component to another component
+	- pre- requiest
+		parent child relationship est.
+			app.component.html
+			<app-employee>
+2 @Input()
+	- to send data (string,number,boolean,any,json,array,array of object,model class object ) from parent to child 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

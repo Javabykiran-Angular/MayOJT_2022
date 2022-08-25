@@ -1,0 +1,14 @@
+<p>parent works!</p>
+
+<input #inputdate type="date"><br><br>
+<button (click)="onSend(inputdate)">Send</button>
+
+
+<hr>
+<!-- <app-child1 [ParentStrData]="strData" [ParentJsonData]="jsonObj" ></app-child1> -->
+
+<app-child1 [ParentDateData]="inputdate">
+
+</app-child1>
+
+
