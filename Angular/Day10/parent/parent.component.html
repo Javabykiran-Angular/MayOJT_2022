@@ -1,0 +1,38 @@
+<p>parent works!</p>
+<!-- 
+<input #inputdate type="date"><br><br>
+<button (click)="onSend(inputdate.value)">Send</button> -->
+
+<h2>Data is :: {{ChildStrData}} </h2>
+
+<table>
+  <!-- <thead *ngIf="childarrData==undefine"> -->
+    <thead >
+    <th>Sr no</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of childarrData;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.name}} </td>
+      <td> {{item.price}} </td>
+      <td> {{item.quantity}} </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+<!-- <app-child1 [ParentStrData]="strData" [ParentJsonData]="jsonObj" ></app-child1> -->
+
+<!-- <app-child1 [ParentDateData]="inputdate">
+
+</app-child1> -->
+
+<app-child2 (ChildStrEvent)="ChildStrData=$event"
+      (ChildArrObjEvent)="onDataReceived($event)"
+></app-child2>
+
+

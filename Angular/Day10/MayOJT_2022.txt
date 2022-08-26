@@ -1,0 +1,87 @@
+Last Lecture
+1  Component Interaction
+	- we can send a data from one component to another component
+	- pre- requiest
+		parent child relationship est.
+			app.component.html
+			<app-employee>
+			
+		<app-parent></app-parent>
+		
+		parent.ts
+		strdata:string='....';
+		jsonobj={
+		....
+		}
+		
+		onSend(mydate1){
+			this.mydate=mydate1.value;
+		}
+		
+		parent.html
+		
+		<input #inputdate type="date">
+		<button (click)="onSend(inputdate)">Send
+		
+		<app-child1 [parentStrdata]="strdata"
+			[Parentjsondata]="jsonobj"
+			
+			[paraentdate]="mydate"
+		>
+		
+		child1.ts
+		@Input() parentStrdata:string='';
+		
+		@Input() Parentjsondata={};
+		
+		@Input() paraentdate;
+		
+		child.html
+		{{parentStrdata}}
+		{{Parentjsondata.name}}
+		
+		{{paraentdate.value}}
+		
+2 @Input()
+	- to send data (string,number,boolean,any,json,array,array of object,model class object ) from parent to child 
+
+
+Today's Lecture
+1 @Output()
+2 @ViewChild()
+	1 if u want access any htmlElement from its view file 
+	2 if u want access any property(public) or any method of child component=>Pending
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
