@@ -1,0 +1,26 @@
+<p>content-project works!</p>
+<hr>
+
+<!-- <app-child4 [ParentTag]="data"></app-child4> -->
+<!-- 
+<app-child4 [ParentlabelName]="labelname">
+
+  <input type="text" #emailid (change)="onChange(emailid)" placeholder="Enter the Email">
+  <br><br>
+  <small> {{hintmMsg}} </small>
+
+</app-child4>
+<br><br>
+<app-child4 [ParentlabelName]="'Password'">
+
+  <input type="password" #password (change)="onChange(password)" placeholder="Enter the Password">
+  <br><br>
+  <small> Enter the Password </small>
+
+</app-child4> -->
+
+<app-child4 *ngFor="let item of arrUsername">
+
+    <h2> Hi {{item}} </h2>
+
+</app-child4>

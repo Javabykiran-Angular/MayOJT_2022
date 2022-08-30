@@ -1,0 +1,89 @@
+Last Lecture
+1  @ViewChild
+	if u want access any property(public) or any method of child component
+	child3.ts
+		username:string='Default name';
+		
+		onClick(){
+			alert("hi "+this.username)
+		}
+		
+	child3.html
+	h2> Hi welcome  {{username}}
+	button (click)="onClick()"> Click 
+	parent1.ts
+	
+	@ViewChild(Child3Component,{static:false}) child3:Child3Component;
+	
+	ngAfterViewInit(){
+	
+	}
+	
+	onChangeProiperty(){
+		this.child3.username='Sumit';
+	}
+	
+	onCallMEthod(){
+			this.child3.onClick();
+	}
+	parent.html
+	button ...> change property 
+		button ..> Call Method  
+	
+	
+2 what is sanitization?
+	//htmltag:string="Email <input ....>";
+	
+	htmltag:string="<h2>Enter the email </h2>";
+	
+	<app-child4 [parenttag]="htmltag">
+	
+	child4.ts
+	@input() parenttag:string='';
+	child.html
+	<div innerHtml=" {{parenttag}} ">
+		
+
+3 content projection 
+	ng-content=> Component directive
+	1 u can send any html tag from parent to child
+	2 there is no any limit of html tags to send 
+
+Today's Lecture
+1 How to implement ng-content.
+ 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
