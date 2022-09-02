@@ -1,0 +1,66 @@
+Last Lecture
+1 How to implement ng-content.
+	<app-child4 [labelname]="mylabel">
+		<input #inputname ...  (click)="onClick(inputname)" >
+		<small> {{hintmsg}}</smal>
+	</app-child4>
+	
+	content-projection.ts
+	onClick(name){
+		name.style.background='blue';
+		
+	}
+	
+	app-child4.ts
+	
+	@Input()labelname:string='';
+	
+	app-child4.html
+	
+	<div >
+	<label> {{labelname}}
+		<ng-content></ng-content>
+	</div>
+		
+		
+
+Today's Lecture
+1 Pipe
+	- it transform a data to end user without Changing its original value
+2 Inbuild Pipe
+ 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
