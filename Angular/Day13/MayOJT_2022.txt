@@ -1,0 +1,70 @@
+Last Lecture
+1 Pipe
+	- it transform a data to end user without Changing its original value
+2 Inbuild Pipe
+	syntax=> {{peroperty | pipe name}}
+	
+		<h2> {{str| lowercase }} </h2>
+		<h2> {{str| uppercase }} </h2>
+		<h2> {{str| titlecase }} </h2>
+		<h2> {{str| slice:2:4 }} </h2>
+		<h2> {{0.25| percent }} </h2>
+		<h2> {{0.025| percent:'1.1' }} </h2>
+		<h2> {{0.025| percent:'1.2' }} </h2>
+		
+		<h2> {{0.25| currency}} </h2>
+		<h2> {{0.25| currency:'INR'}} </h2>
+		<h2> {{0.25| currency:'INR':'code'}} </h2>
+		
+			<h2> {{5.67825| number:'1.2-3'}} </h2>
+			<h2> {{5.67855| number:'1.2-3'}} </h2>
+			<h2> {{5.67825| number:'2.2-3'}} </h2>
+			
+			<h2> {{mydate|date:'shortdate' }} </h2>
+			<h2> {{mydate|date:'dd-MM-yyyy' }} </h2>
+			<h2> {{mydate|date:'longDate' | uppercase }} </h2>
+			
+			<input [placeholder]="hintmsg|uppercase"
+
+Today's Lecture
+1 Pure Pipe => deterministic value 
+2 impure Pipe => non deterministic value 
+3 Custom Pipe
+4 Pipe Transform
+5 transform method
+ 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
