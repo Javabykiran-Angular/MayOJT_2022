@@ -1,0 +1,142 @@
+Last Lecture
+1 Http Protocol
+	set of rules & regulation
+2 Http Methods
+	1 get => to get data from backend server 
+	2 post => to send a data from frontend to backend server 
+	3 put => to update a data => to send data from frontend to backend
+	4 delete => to delete a data => to send data from frontend to backend
+3 Http Request-Response
+	Http Request has 2 part
+		1 header
+			- url
+			- api name
+			- lang.
+			- ip
+			- date
+			- http method
+			- content Type
+				- image
+				- document
+				- audi/video
+				- text
+				ApplicationContetnt("html/text")
+			- auth
+		2 Http body
+			- data => 
+					json/html/xmlData/text
+		Http Response has 2 part
+			
+			1 header
+			- url
+			- api name
+			- lang.
+			- ip
+			- date
+			- http method
+			- content Type
+				- image
+				- document
+				- audi/video
+				- text
+				ApplicationContetnt("html/text")
+			- auth
+			
+			status
+				- 2xx=>200,201...299 => success,ok 
+				- 3xx => 300,30,...399 => redirection
+				- 4xx => 400,401...499 => client side error
+				- 5xx  => 500,501,...599 => Server side 
+			
+		2 Http body
+			- data => 
+					json/html/xmlData/text
+			
+4 jsonplaceholder
+https://jsonplaceholder.typicode.com/posts
+	- It is a fake service 
+	- it design for demo purpose 
+	- if u send any http request of send data/update data/delete data 
+		it can't save/reflect ur changes in database but it gives a response of ur request.
+	
+5 http service
+	ng g s http 
+	
+6 HttpClientModule
+	import app.module.ts
+	
+	
+7 @Injectable
+	
+	@Injectable({
+		ProvideIn:'root'
+	})
+	export class htppservice{
+		
+		url:string=...
+		constructor(private http:HttpClient){}
+		
+		getPost(){
+			return this.http.get(this.url)
+		}
+		
+	}
+8 Observable
+
+
+9 Http Get Request
+
+	post.ts
+		constructor(private service:HttpService){}
+		
+		ngOnInit(){
+			this.service.getPost()
+			.subscribe((response)=>{
+				this.post=(<any>response)
+			})
+		}
+		
+		post.html
+		tr *ngFor="let item of post">
+			td> {{item.id}}
+....		
+		
+
+Today's Lecture
+1 Post 
+2 put 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
