@@ -1,0 +1,120 @@
+Last Lecture
+1 Post 
+	post.html
+		
+		<input #inputtitle placeholder="Enter the title">
+		<input #inputbody placeholder="Enter the title">
+		<button (click)="onSend(inputtitle.value,inputbody.value)">
+		
+		.ts file
+		
+		onSend(mytitle:string,mybody:string){
+			let obj={
+			....
+			}
+			this.service.PostData(obj)
+			.subscribe((response)=>{
+				console.log(response)
+			})
+		}
+		
+		http.ts
+		PostData(obj){
+			return (this.http.post(this.url,obj))
+		}
+				
+2 put 
+	
+	<div>
+		<input [(ngModel)]="id">
+		
+		<button (click)="onUpdate()">
+	
+	<button (click)="onEdit(item)">Edit
+	
+	.ts
+	onEdit(item){
+		this.id=item.id;
+		....
+		this.ishidden=false;
+	}
+	
+	onUpdate(){
+		let obj={
+			id:this.id,
+			....
+		}
+		
+		this.service.UpdateData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	http.ts
+	UpdateData(obj){
+		return (this.http.put(`${this.url}/${obj.id}`,obj))
+	}
+
+Today's Lecture
+1 Delete
+2 error
+3 Routing
+	- navigation from one component to another component
+4 routing steps
+	1 configure the route
+	2 <router-outlet>
+	3 establish the link/navigate in between two component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
