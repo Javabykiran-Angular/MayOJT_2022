@@ -1,0 +1,103 @@
+Last Lecture
+1 Delete
+	<button (click)="onDelete(item.id)" > Delete
+	
+	.ts file
+	
+	onDelete(id){
+		this.service.deletedata(id)
+		.subscribe((response)=>{
+		.....
+		},(error)=>{
+		...
+		})
+	}
+	
+	httpservice.ts
+	deletedata(id){
+		return (this.http.delete(`${this.url}/${id}`))
+	}
+2 error
+3 Routing
+	- navigation from one component to another component
+		
+4 routing steps
+	1 configure the route
+		
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			
+			{
+				path:"Page1",component:Page1Componet
+			},
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+		
+	2 <router-outlet>
+	3 establish the link/navigate in between two component
+		
+		<a routerLink="/Page1">Page1
+
+Today's Lecture
+1 Send parameter to component
+2 send multiple parameter
+3 send query parameter
+4 Dynamic routing/ using navigate method 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
