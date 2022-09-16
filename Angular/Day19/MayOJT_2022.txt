@@ -1,0 +1,110 @@
+Last Lecture
+1 Send parameter to component
+	app-routing
+	{
+		path:"Page2/:id/:username",component:Page2Component
+	}
+	home.html
+	
+	<a [routerLink]="['/Page2',myid,myusername]">
+	
+	page2.ts
+	DI => private route:AcitavatedRoute
+	
+	GetAllDataFromURl()
+	{
+		this.route.ParamMap
+			.suscribe((param)=>{
+				this.myid=+param.get("id")
+				....
+			})
+	}
+	
+		
+2 send multiple parameter
+3 send query parameter
+	<a routerLink="/Queryparam" [queryParams]="json">
+	
+	query.ts
+		AcitavatedRoute
+		
+		this.route.QueryParamMap
+			.suscribe((param)=>{
+				this.json.id=+param.get("id");
+			})
+	
+4 Dynamic routing/ using navigate method 
+
+	private router:Router
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.id])
+	}
+	
+	onqueryParameter()
+	{
+		this.router.navigate(['/QueryParam'],{
+			queryParams:this.json
+		})
+	}	
+5 Observable Vs Promises
+
+Today's Lecture
+1 child routes	
+2 Lazy Loading
+3 create Custom Module
+4 create Custom Routing Module/Feature Module
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
