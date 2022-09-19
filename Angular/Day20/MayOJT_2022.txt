@@ -1,0 +1,106 @@
+Last Lecture
+1 child routes	
+	products
+		laptop
+		tv
+		mobile
+	app-routing.ts
+	{
+		path:'products',childern:[
+		{
+			path:"",componet:productComponet
+		},
+			{
+				path:'laptop',componet:laptocomp
+			},
+			....
+		]
+	}
+		
+2 Lazy Loading
+		user folder
+			ng g m user --routing --flat 
+			listusr
+			adduser
+			updateuser
+			deleteuser
+			
+		user-routing.ts
+			[
+				{
+					path:'',componet:listuser
+				},
+				...
+			]
+	app-routing.ts
+		{
+			path:'user',loadchildren:()=>import('./user/user.module').then(m=>m.userModule)
+		}
+3 create Custom Module
+4 create Custom Routing Module/Feature Module
+
+Today's Lecture
+1 Modifide the routing
+2 Subject
+	- it is present in rxjx lib.
+	1 @input,@output
+	2 through routing => drawback - 1 sensitive data we can't not send
+		data is visible in url for that we can't prefere fpr sensitive data
+	3 using service => u can send a data to the component
+	
+3 BehaviorSubject 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
