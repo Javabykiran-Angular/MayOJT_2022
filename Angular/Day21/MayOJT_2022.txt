@@ -1,0 +1,106 @@
+Last Lecture
+1 Modifide the routing
+app.component.html
+	<app-home>
+	home.html
+	
+	<roter-outlet>
+2 Subject
+	- it is present in rxjx lib.
+	1 @input,@output
+	2 through routing => drawback - 1 sensitive data we can't not send
+		data is visible in url for that we can't prefere fpr sensitive data
+	3 using service => u can send a data to the component
+	- it is present in rxjx lib.
+	
+	notify.ts
+	
+	//notification=new Subject<string>();
+	notification=new BehaviorSubject<string>('welcome ');
+	
+	sendMessage(data:string){
+		this.notification.next(data);
+	}
+	
+	
+	queryparameter.ts
+	
+	onSend(msg:string){
+		this.notificationService.sendMessage(msg);
+	}
+	
+	notification.component.ts
+	
+	this.notification.subscribe((data)=>{
+		this.receive=data;
+	})
+	
+3 BehaviorSubject 
+
+
+Today's Lecture
+1 Overview of Bootstrap
+	- it is css freamwork
+	- it gives readily available template class
+	- make ur application attractive
+	- make ur application responsive
+2 integration of bootstrap
+	1 online CDN => content delivery network Link
+	2 use offline
+3 Basic grid system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
