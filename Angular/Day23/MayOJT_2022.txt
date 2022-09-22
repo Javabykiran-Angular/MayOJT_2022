@@ -1,0 +1,83 @@
+Last Lecture
+1 Template Driven Form
+	- It is used for simple form 
+	- all validation is done on view file except complex validation
+	- It is easy to use 
+	- login,signup,f/b form 
+	
+2 FormControl
+	1 valid => true/false
+	2 invalid => ture/false
+	3 touched => true/false
+	4 pristine => true 
+	5 dirty => true/false 
+	6 errors => it is object
+				
+	
+3 steps
+	1 we have to use ngModel => it creates a instance of FormControl(it holds a fromcontrol instance)
+		u have use name html attribute
+	2 create a template ref variable to assign ngModel
+	3 to use errors object for validation purpose 
+		u have to use required attribute
+4 ngForm
+5 json pipe
+
+Today's Lecture
+1 ngSubmit
+2 ngValue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
