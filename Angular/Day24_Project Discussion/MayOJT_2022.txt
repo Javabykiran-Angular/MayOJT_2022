@@ -1,0 +1,133 @@
+Last Lecture
+1 ngSubmit
+2 ngValue
+
+Today's Lecture
+1 Sequeance
+	1 uninstall angular 8 
+		npm uninstall -g @Angular/cli@8.2.*
+	2 delete npm & npm-cache folder
+		c:\user\dell\appdata\..
+	3 uninstall node js 
+	4 restart ur machine
+	5 download node js of version node-v14.15.1
+	
+2 u have create login api
+	
+		
+	db
+	  registeration
+		id => Primary key , size, autoincrement
+		fname => varchar(20)
+		username=> varchar(50)
+		mobileno=> varchar()
+		emailid => unique
+		password => varchar
+		createddate=>DateTime
+	
+	registration => entity class
+		
+		@id
+		Integer id;
+		String fname
+		String username;
+		String mobileno;
+		gender;
+		emailid
+		password
+		createddate;
+		
+	@RestController
+	@CrossOrigin
+	@RequestMapping('/api')
+	class controller{
+		
+		@PostMapping("/login")
+	public HashMap loginCheck(@RequestBody Registration reg){
+			HashMap obj=service.loginCheck(reg);
+			return obj;
+		}		
+		
+	}
+	
+	service.java
+		public HashMap loginCheck(Registration reg){
+			Registration user =dao.loginCheck(reg)
+			HashMap map=new new HashMap();
+			//JsonObject obj=new JsonObject();
+			if(user!=null){
+				map.put("msg",'Valid User');
+				map.put("user",user);
+			}else{
+			map.put("msg",'InValid User');
+				map.put("user",user);
+			}
+			return map;
+			
+			
+		}
+		
+		
+		dao.java
+		public Registration loginCheck(Registration reg){
+			check reg data & ur db data => emailid & password 
+			return userreg;
+		}
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
